@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net6.0</TargetFrameworks>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SmartAnalyzers.CSharpExtensions.Annotations" Version="4.2.2" />
+    <PackageReference Include="Thinktecture.Console.Abstractions" Version="2.5.0" />
+    <PackageReference Include="Thinktecture.IO.FileSystem.Abstractions" Version="2.5.0" />
+    <AssemblyAttribute Include="SmartAnalyzers.CSharpExtensions.Annotations.InitRequiredForNotNull" />
+  </ItemGroup>
+
+</Project>
