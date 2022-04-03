@@ -12,6 +12,7 @@
     <RepositoryUrl>https://github.com/jmussett/ConsoleWizard</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>C#;Console;Wizard;Utility</PackageTags>
+    <Version>1.0.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
