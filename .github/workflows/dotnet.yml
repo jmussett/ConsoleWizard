@@ -1,4 +1,4 @@
-name: .NET
+name: Build and Publish
 
 on:
   push:
@@ -22,7 +22,7 @@ jobs:
     - uses: kzrnm/get-net-sdk-project-versions-action@v1
       id: get-version
       with:
-          proj-path: Directory.Build.props
+          proj-path: ConsoleWizard/ConsoleWizard.csproj
     - name: Package
       run: dotnet pack $SOLUTION -c Release -p:PackageVersion=${{ steps.get-version.outputs.package-version }} --no-build --no-restore
     - name: Publish
