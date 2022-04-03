@@ -1,6 +1,4 @@
-﻿namespace ConsoleWizard;
-
-internal enum SelectionResultType
+﻿internal enum SelectionResultType
 {
     Selected,
     Next,

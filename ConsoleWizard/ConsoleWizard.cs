@@ -1,4 +1,4 @@
-﻿namespace ConsoleWizard;
+﻿namespace System;
 
 /// <summary>
 /// Provides console utility methods for stateful console wizards and application prototypes.

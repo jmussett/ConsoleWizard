@@ -5,6 +5,13 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageProjectUrl>https://github.com/jmussett/ConsoleWizard</PackageProjectUrl>
+    <Authors>James Mussett</Authors>
+    <Description>A library for creating console-based wizards and application prototypes.</Description>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/jmussett/ConsoleWizard</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>C#;Console;Wizard;Utility</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
@@ -12,6 +19,13 @@
     <PackageReference Include="Thinktecture.Console.Abstractions" Version="2.5.0" />
     <PackageReference Include="Thinktecture.IO.FileSystem.Abstractions" Version="2.5.0" />
     <AssemblyAttribute Include="SmartAnalyzers.CSharpExtensions.Annotations.InitRequiredForNotNull" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>

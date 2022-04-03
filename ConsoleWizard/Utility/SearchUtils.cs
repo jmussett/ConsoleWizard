@@ -1,6 +1,4 @@
-﻿namespace ConsoleWizard;
-
-internal class SearchUtils : AdapterProvider
+﻿internal class SearchUtils : AdapterProvider
 {
     private SearchUtils() { }
 

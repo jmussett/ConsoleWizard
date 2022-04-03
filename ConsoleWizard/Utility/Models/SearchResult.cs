@@ -1,6 +1,4 @@
-﻿namespace ConsoleWizard;
-
-internal class SearchResult<T>
+﻿internal class SearchResult<T>
 {
     public T Value { get; set; }
     public int Lines { get; set; }

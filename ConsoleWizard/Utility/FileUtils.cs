@@ -1,6 +1,4 @@
-﻿namespace ConsoleWizard;
-
-internal class FileUtils : AdapterProvider
+﻿internal class FileUtils : AdapterProvider
 {
     private FileUtils() {}
 

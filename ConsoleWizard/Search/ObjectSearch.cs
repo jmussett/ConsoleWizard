@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 
-namespace ConsoleWizard;
+namespace System;
 
 public partial class ConsoleWizard
 {

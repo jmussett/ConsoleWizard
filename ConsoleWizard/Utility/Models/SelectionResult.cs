@@ -1,6 +1,4 @@
-﻿namespace ConsoleWizard;
-
-internal class SelectionResult<T>
+﻿internal class SelectionResult<T>
 {
     public T? Value { get; set; }
     public int? Index { get; set; }
