@@ -23,8 +23,8 @@ jobs:
       id: get-version
       with:
           proj-path: ConsoleWizard/ConsoleWizard.csproj
-    - name: Package
-      run: dotnet pack ConsoleWizard.sln -c Release -p:PackageVersion=${{ steps.get-version.outputs.package-version }} --no-build --no-restore
+    - name: Build
+      run: dotnet build ConsoleWizard.sln -c Release -p:PackageVersion=${{ steps.get-version.outputs.package-version }} --no-restore
     - name: Publish
       run: dotnet nuget push **\**.nupkg --skip-duplicate -s 'https://api.nuget.orgv3/index.json' -ApiKey ${{ secrets.NUGET_API_KEY }} 
     - name: Create Release
