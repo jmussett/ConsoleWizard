@@ -27,11 +27,3 @@ jobs:
       run: dotnet build ConsoleWizard.sln -c Release -p:PackageVersion=${{ steps.get-version.outputs.package-version }} --no-restore
     - name: Publish
       run: dotnet nuget push **\**.nupkg --skip-duplicate -s 'https://api.nuget.org/v3/index.json' -k ${{ secrets.NUGET_API_KEY }} 
-    - name: Create Release
-      id: create_release
-      uses: actions/create-release@latest
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        tag_name: ${{ steps.get-version.outputs.package-version }}
-        release_name: Release ${{ steps.get-version.outputs.package-version }} 
