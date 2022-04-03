@@ -1,5 +1,7 @@
 # Console Wizard
 
+[![latest version](https://img.shields.io/nuget/v/ConsoleWizard)](https://www.nuget.org/packages/ConsoleWizard/)
+
 Console Wizard is a library for creating console-based wizards and application prototypes.
 
 It provides the following types of console utility functions:
